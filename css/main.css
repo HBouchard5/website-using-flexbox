@@ -96,52 +96,53 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black;
+  font-family: 'Fira Sans', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
-  color: #fff;
-}
-
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-}
-
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
-
-header,
-footer,
-main {
+  color: rgb(175, 175, 175);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+header {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 3rem;
+}
+
+main {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  font-size: 2rem;
+}
+
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
 }
 
 .flex-items {
-  color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1.2rem;
   width: 30%;
   height: 200px;
   display: flex;
@@ -149,6 +150,20 @@ main {
   align-items: center;
 }
 
+#div-1, #div-2 {
+  border-right: 1px solid lightgray;
+  padding-right: 30px;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  font-size: 1rem;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
